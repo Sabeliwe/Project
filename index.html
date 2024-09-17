@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="statics/styles.css">
+    <title>Agricultural Advisory System</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <h1>Welcome to the Agri Advisory System</h1>
+    <img src="Company logo.png" alt="Logo">
+    <form action="/get_advisory" method="post">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br>
+        <label for="crop_type">Crop Type:</label>
+        <input type="text" id="crop_type" name="crop_type" required><br>
+        <button type="submit">Get Advisory</button>
+    </form>
+</body>
+</html>
+
